@@ -1,3 +1,8 @@
+package day1
+
+import println
+import readInput
+
 fun part1(input: List<String>): Int =
     input.sumOf { line ->
         val first = line.first { it.isDigit() }
@@ -9,7 +14,6 @@ fun part2(input: List<String>): Int =
     input.sumOf { line ->
         val first = firstDigitOrNumber(line)
         val last = lastDigitOrNumber(line)
-        println("$first + $last")
         "$first$last".toInt()
     }
 
@@ -72,7 +76,7 @@ private val wordsReversed: Map<String, Char> = mapOf(
 
 
 fun main() {
-    val input = readInput("d1_input")
-//    part1(input).println()
+    val input = readInput("day1/d1_input")
+    part1(input).println()
     part2(input).println()
 }
