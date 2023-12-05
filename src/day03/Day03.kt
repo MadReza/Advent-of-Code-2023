@@ -1,4 +1,4 @@
-package day3
+package day03
 
 import println
 import readInput
@@ -149,7 +149,7 @@ fun part2(input: List<String>): Int {
 }
 
 fun main() {
-    val input = readInput("day3/d3_input")
+    val input = readInput("day03/d3_input")
     val part1Millis = measureTimeMillis {
         part1(input).println()
     }

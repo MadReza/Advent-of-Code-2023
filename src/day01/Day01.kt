@@ -1,4 +1,4 @@
-package day1
+package day01
 
 import println
 import readInput
@@ -76,7 +76,7 @@ private val wordsReversed: Map<String, Char> = mapOf(
 
 
 fun main() {
-    val input = readInput("day1/d1_input")
+    val input = readInput("day01/d1_input")
     part1(input).println()
     part2(input).println()
 }

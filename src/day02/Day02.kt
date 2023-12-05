@@ -1,4 +1,4 @@
-package day2
+package day02
 
 import println
 import readInput
@@ -73,7 +73,7 @@ fun part2(input: List<String>): Int = getAllGames(input)
     }.sumOf { it }
 
 fun main() {
-    val input = readInput("day2/d2_input")
+    val input = readInput("day02/d2_input")
     part1(input).println()
     part2(input).println()
 }
